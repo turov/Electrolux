@@ -1,0 +1,73 @@
+.always {
+    margin-bottom: 28px;
+}
+
+.always a {
+    position: relative;
+    display: block;
+    width: fit-content;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.34);
+    backdrop-filter: blur(8px);
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto;
+    color: rgba(4, 30, 65, 1);
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.always a::before {
+    content: '';
+    display: block;
+    width: calc(100% - 32px);
+    height: 1px;
+    background: rgba(4, 30, 65, 1);
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.always-background {
+    background-image: url('../assets/always.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 180px;
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@media (min-width: 1100px) {
+    .always {
+        margin-bottom: 72px;
+    }
+
+    .always h2 {
+        margin-bottom: 72px;
+    }
+
+    .always__container {
+        max-width: 1470px;
+        margin: 0 auto;
+    }
+
+    .always-background {
+        padding: 24px;
+        min-height: 500px;
+    }
+
+    .always a {
+        padding: 16px 60px;
+        font-size: 18px;
+    }
+
+    .always a::before {
+        width: calc(100% - 120px);
+        bottom: 12px;
+    }
+}

@@ -1,0 +1,68 @@
+.hero {
+    min-height: 180px;
+    padding: 24px 50px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+.hero--index {
+    background-image: url("../assets/hero-index.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero--brand {
+    background-image: url("../assets/hero-brand.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero--small-appliances {
+    background-image: url("../assets/hero-small.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #ffffff;
+    max-width: 123px;
+    margin: 0 0 24px;
+}
+
+.hero a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #ffffff;
+}
+
+@media (min-width: 1100px) {
+    .hero {
+        margin-top: 0;
+        min-height: 500px;
+        margin-bottom: 72px;
+    }
+
+    .hero__container {
+        padding: 120px 100px;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        max-width: unset;
+        margin-bottom: 42px;
+    }
+
+    .hero a {
+        font-size: 18px;
+
+    }
+}

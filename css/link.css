@@ -1,0 +1,14 @@
+.link {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--color-text);
+}
+
+@media (min-width: 1100px) {
+    .link {
+        font-size: 18px;
+    }
+}

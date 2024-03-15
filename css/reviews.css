@@ -1,0 +1,88 @@
+.reviews {
+    padding: 0 12px 28px;
+}
+
+.swiper-pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.swiper-pagination {
+    position: static;
+    width: fit-content;
+    margin: 0 94px;
+}
+
+.slider-container {
+    max-width: 785px;
+    margin: 0 auto;
+}
+
+
+.button-next {
+    font-size: 0;
+    width: 37px;
+    height: 23px;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='37' height='23' viewBox='0 0 37 23' fill='none'%3E%3Cpath d='M36.0506 12.3522C36.6413 11.7713 36.6492 10.8216 36.0683 10.2309L26.602 0.605938C26.0211 0.0152997 25.0714 0.00740193 24.4808 0.588297C23.8902 1.16919 23.8823 2.11891 24.4632 2.70954L32.8776 11.2651L24.322 19.6795C23.7314 20.2604 23.7235 21.2101 24.3044 21.8008C24.8853 22.3914 25.835 22.3993 26.4256 21.8184L36.0506 12.3522ZM0.987526 12.4999L34.9864 12.7827L35.0113 9.78279L1.01247 9.50005L0.987526 12.4999Z' fill='black'/%3E%3C/svg%3E");
+}
+
+.button-prev {
+    font-size: 0;
+    width: 37px;
+    height: 23px;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='37' height='23' viewBox='0 0 37 23' fill='none'%3E%3Cpath d='M36.0506 12.3522C36.6413 11.7713 36.6492 10.8216 36.0683 10.2309L26.602 0.605938C26.0211 0.0152997 25.0714 0.00740193 24.4808 0.588297C23.8902 1.16919 23.8823 2.11891 24.4632 2.70954L32.8776 11.2651L24.322 19.6795C23.7314 20.2604 23.7235 21.2101 24.3044 21.8008C24.8853 22.3914 25.835 22.3993 26.4256 21.8184L36.0506 12.3522ZM0.987526 12.4999L34.9864 12.7827L35.0113 9.78279L1.01247 9.50005L0.987526 12.4999Z' fill='black'/%3E%3C/svg%3E");
+    transform: rotate(180deg);
+}
+
+.swiper-button-disabled {
+    filter: grayscale(100);
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.reviews .swiper-slide {
+    padding: 8px;
+    background-color: rgba(248, 247, 247, 1);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+    height: 100%;
+}
+
+.reviews .swiper-content {
+    height: 100%;
+}
+
+.reviews .swiper-slide p {
+    margin-bottom: 8px;
+}
+
+.reviews .swiper-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 1100px) {
+    .reviews {
+        padding-bottom: 72px;
+    }
+
+    .slider-container {
+        max-width: 1324px;
+    }
+
+    .reviews .swiper-slide {
+        padding: 36px;
+    }
+
+    .reviews .swiper-slide p {
+        margin-bottom: 16px;
+    }
+
+    .swiper-pagination-container {
+        margin-top: 28px;
+    }
+}

@@ -1,0 +1,96 @@
+.categories__container {
+    padding: 0 16px;
+    margin-bottom: 28px;
+}
+
+.categories__list-new {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.categories__item-new {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: calc(50% - 16px);
+    padding: 16px;
+    flex-grow: 1;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.categories__item-new img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 0.75rem rgb(23, 49, 96));
+}
+
+.categories__item-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-background);
+    box-shadow: unset;
+}
+
+.categories__item-placeholder img {
+    width: 100%;
+    height: auto;
+    filter: unset;
+}
+
+
+.categories__item-new a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.categories__item {
+    position: relative;
+}
+
+.categories__item--mobile-wide {
+    width: 100%;
+}
+
+.categories__item--mobile-wide img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.categories__item span {
+    color: var(--color-background);
+    text-decoration: none;
+    position: absolute;
+    left: 6px;
+    bottom: 6px;
+    text-transform: uppercase;
+}
+
+.categories__desktop-list {
+    display: none;
+}
+
+@media (min-width: 1100px) {
+    .categories__container {
+        max-width: 1324px;
+        margin: 0 auto 72px;
+    }
+
+    .categories__item-new {
+        /*width: calc(33.33% - 12px);*/
+        height: unset;
+        width: calc(25% - 12px);
+    }
+
+}
