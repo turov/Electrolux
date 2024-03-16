@@ -31,6 +31,15 @@
     text-decoration: none;
 }
 
+.catalog__item img {
+    transform: scale(1);
+    transition: all 0.4s ease;
+}
+
+.catalog__item:hover img {
+    transform: scale(1.1);
+}
+
 .catalog__item-img-container {
     max-height: 380px;
     padding: 16px 16px 32px;
