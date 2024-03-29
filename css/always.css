@@ -7,7 +7,7 @@
     display: block;
     width: fit-content;
     padding: 8px 16px;
-    background: rgba(255, 255, 255, 0.34);
+    background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(8px);
     text-align: center;
     text-decoration: none;

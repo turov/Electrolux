@@ -1,7 +1,6 @@
 .hero {
     min-height: 180px;
     padding: 24px 50px;
-    margin-top: 28px;
     margin-bottom: 28px;
 }
 
@@ -27,9 +26,13 @@
     font-size: 18px;
     line-height: 1.4;
     font-weight: 700;
-    color: #ffffff;
-    max-width: 123px;
+    color: var(--color-text);
+    max-width: 155px;
+    width: fit-content;
     margin: 0 0 24px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
 }
 
 .hero a {
