@@ -190,7 +190,7 @@
 
     .header__partners-item {
         height: auto;
-        width: 12.5%;
+        width: calc(100% / 9);
     }
 
     .header__partners-item a {
